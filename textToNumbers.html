@@ -1,0 +1,60 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+<html>
+<body>
+<script type="text/javascript">
+    
+// Program name: textToNumbers.html
+// Purpose: Convert text input to numbers and finds the sum, product, average and modulus
+// Author: <Alexia Gonzalez>
+// Date: <June 18, 2015>
+
+// Declare variables and constants
+var num1, num2; //numbers entered by the user
+var sum; //sum of two numbers
+var product; // product of two numbers
+var average; // average of two numbers
+var modulus; // modulus of two numbers
+var BR = "<br/>" //HTML line break tag
+var ES = ""; //empty string
+
+// Welcome the user
+document.write("Welcome!"+ BR);
+document.write("This program converts text to numbers");
+document.write(" finds the sum, product, average, modulus, and then displays the results."+ BR);
+    
+// Prompt the user for two numbers and then convert text data to integers.
+num1 = prompt("enter the first number:",ES);
+num1= parseInt(num1);
+num2 = prompt("enter the second number:",ES);
+num2= parseInt(num2);
+    
+// Add the numbers and display the sum
+sum = num1 + num2;
+document.write(BR + "The SUM of the number is:" + sum + BR);
+
+// Multiplying the numbers and display the product
+product= num1 * num2;
+   document.write(BR + "The product of the number is:" + product + BR);
+ 
+// Find the modulus of the numbers and display the mod
+modulus= num1 % num2;
+    document.write(BR + "The modulus of the number is:" + modulus + BR);
+
+// Thank the user and end the program
+document.write(BR + "Thank you!" + BR);
+
+</script>
+</body>
+</html>
